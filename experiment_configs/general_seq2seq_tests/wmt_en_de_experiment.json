@@ -1,0 +1,23 @@
+{
+    "model_class": "WordSeq2SeqTranslationModel",
+    "train_file": "./data/processed/wmt/en-de/combined.en-de.tokenized",
+    "val_file": "./data/processed/wmt/en-de/newstest2013.en-de.tokenized",
+    "run_id": "britz_massive_exploration",
+    "model_params": {
+        "batch_size": 80,
+        "embed_dim": 512,
+        "rnn_dim": 512,
+        "output_projection_batch_size": 40,
+        "dropout": 0.2,
+        "num_layers": 2,
+        "lr": 0.0001,
+        "lr_decay": null,
+        "start_decay_at": null
+    },
+    "train_model_params": {
+        "val_period": 10000,
+        "num_epochs": 50
+    },
+    "save_dir": "./models/wmt/en_de",
+    "log_dir": "./logs/wmt/en_de"
+}

@@ -1,0 +1,11 @@
+{
+    "model_class": "EditVectorCombinedDistanceSolver",
+    "read_data_params": {
+        "tgt_given_src_path": "./data/processed/language_pairs_v3.2_gold_aligned/tur-eng/tgt_given_src.unnormalized",
+        "fasttext_vectors_path": "./data/raw/fasttext_vectors/tur/elisa.tur.y1r1.v4/elisa.tur.y1r1.v4.vec",
+        "fasttext_model_path": "./data/raw/fasttext_vectors/tur/elisa.tur.y1r1.v4/elisa.tur.y1r1.v4.bin"
+    },
+    "run_id": "tur_edit_vector_combined_distance_solver",
+    "save_dir": "./models/similarity/edit_vector_combined_distance_solver",
+    "log_dir": "./models/similarity/edit_vector_combined_distance_solver"
+}

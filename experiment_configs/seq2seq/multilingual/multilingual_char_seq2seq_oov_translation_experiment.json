@@ -1,0 +1,61 @@
+{
+    "model_class": "MultilingualCharSeq2SeqTranslationModel",
+    "read_data_params": {
+        "train_files": {
+            "amh": "data/processed/language_pairs_v3.2_word_translation/amh-eng/amh-eng.weighted.romanized.word_translation.train",
+            "ara": "data/processed/language_pairs_v3.2_word_translation/ara-eng/ara-eng.weighted.romanized.word_translation.train",
+            "ben": "data/processed/language_pairs_v3.2_word_translation/ben-eng/ben-eng.weighted.romanized.word_translation.train",
+            "cmn": "data/processed/language_pairs_v3.2_word_translation/cmn-eng/cmn-eng.weighted.romanized.word_translation.train",
+            "fas": "data/processed/language_pairs_v3.2_word_translation/fas-eng/fas-eng.weighted.romanized.word_translation.train",
+            "hau": "data/processed/language_pairs_v3.2_word_translation/hau-eng/hau-eng.weighted.romanized.word_translation.train",
+            "hun": "data/processed/language_pairs_v3.2_word_translation/hun-eng/hun-eng.weighted.romanized.word_translation.train",
+            "rus": "data/processed/language_pairs_v3.2_word_translation/rus-eng/rus-eng.weighted.romanized.word_translation.train",
+            "som": "data/processed/language_pairs_v3.2_word_translation/som-eng/som-eng.weighted.romanized.word_translation.train",
+            "spa": "data/processed/language_pairs_v3.2_word_translation/spa-eng/spa-eng.weighted.romanized.word_translation.train",
+            "tam": "data/processed/language_pairs_v3.2_word_translation/tam-eng/tam-eng.weighted.romanized.word_translation.train",
+            "tur": "data/processed/language_pairs_v3.2_word_translation/tur-eng/tur-eng.weighted.romanized.word_translation.train",
+            "urd": "data/processed/language_pairs_v3.2_word_translation/urd-eng/urd-eng.weighted.romanized.word_translation.train",
+            "uzb": "data/processed/language_pairs_v3.2_word_translation/uzb-eng/uzb-eng.weighted.romanized.word_translation.train",
+            "vie": "data/processed/language_pairs_v3.2_word_translation/vie-eng/vie-eng.weighted.romanized.word_translation.train",
+            "yor": "data/processed/language_pairs_v3.2_word_translation/yor-eng/yor-eng.weighted.romanized.word_translation.train"
+        },
+        "val_files": {
+            "amh": "data/processed/language_pairs_v3.2_word_translation/amh-eng/amh-eng.word_translation.dev.romanized",
+            "ara": "data/processed/language_pairs_v3.2_word_translation/ara-eng/ara-eng.word_translation.dev.romanized",
+            "ben": "data/processed/language_pairs_v3.2_word_translation/ben-eng/ben-eng.word_translation.dev.romanized",
+            "cmn": "data/processed/language_pairs_v3.2_word_translation/cmn-eng/cmn-eng.word_translation.dev.romanized",
+            "fas": "data/processed/language_pairs_v3.2_word_translation/fas-eng/fas-eng.word_translation.dev.romanized",
+            "hau": "data/processed/language_pairs_v3.2_word_translation/hau-eng/hau-eng.word_translation.dev.romanized",
+            "hun": "data/processed/language_pairs_v3.2_word_translation/hun-eng/hun-eng.word_translation.dev.romanized",
+            "rus": "data/processed/language_pairs_v3.2_word_translation/rus-eng/rus-eng.word_translation.dev.romanized",
+            "som": "data/processed/language_pairs_v3.2_word_translation/som-eng/som-eng.word_translation.dev.romanized",
+            "spa": "data/processed/language_pairs_v3.2_word_translation/spa-eng/spa-eng.word_translation.dev.romanized",
+            "tam": "data/processed/language_pairs_v3.2_word_translation/tam-eng/tam-eng.word_translation.dev.romanized",
+            "tur": "data/processed/language_pairs_v3.2_word_translation/tur-eng/tur-eng.word_translation.dev.romanized",
+            "urd": "data/processed/language_pairs_v3.2_word_translation/urd-eng/urd-eng.word_translation.dev.romanized",
+            "uzb": "data/processed/language_pairs_v3.2_word_translation/uzb-eng/uzb-eng.word_translation.dev.romanized",
+            "vie": "data/processed/language_pairs_v3.2_word_translation/vie-eng/vie-eng.word_translation.dev.romanized",
+            "yor": "data/processed/language_pairs_v3.2_word_translation/yor-eng/yor-eng.word_translation.dev.romanized"
+        }
+    },
+    "run_id": "seq2seq_multilingual_char_weighted",
+    "model_params": {
+        "batch_size": 60,
+        "embed_dim": 1024,
+        "rnn_dim": 1024,
+        "output_projection_batch_size": 60,
+        "dropout": 0.3,
+        "num_layers": 3,
+        "lr": 0.0001,
+        "optimizer": "adam",
+        "rnn_type": "LSTM",
+        "seed": null
+    },
+    "train_model_params": {
+        "num_epochs": 30,
+        "val_period": 10000,
+        "early_stopping_patience": 3
+    },
+    "save_dir": "./models/seq2seq/multilingual_char",
+    "log_dir": "./logs/seq2seq/multilingual_char"
+}

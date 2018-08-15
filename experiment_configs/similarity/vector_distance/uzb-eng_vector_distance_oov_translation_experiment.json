@@ -1,0 +1,11 @@
+{
+    "model_class": "VectorDistanceSolver",
+    "read_data_params": {
+        "tgt_given_src_path": "./data/processed/language_pairs_v3.2_gold_aligned/uzb-eng/tgt_given_src.unnormalized",
+        "fasttext_vectors_path": "./data/raw/fasttext_vectors/uzb/wiki.uz/wiki.uz.vec",
+        "fasttext_model_path": "./data/raw/fasttext_vectors/uzb/wiki.uz/wiki.uz.bin"
+    },
+    "run_id": "uzb_vector_distance_solver",
+    "save_dir": "./models/similarity/vector_distance_solver",
+    "log_dir": "./models/similarity/vector_distance_solver"
+}

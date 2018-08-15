@@ -1,0 +1,11 @@
+{
+    "model_class": "EditVectorCombinedDistanceSolver",
+    "read_data_params": {
+        "tgt_given_src_path": "./data/processed/language_pairs_v3.2_gold_aligned/som-eng/tgt_given_src.unnormalized",
+        "fasttext_vectors_path": "./data/raw/fasttext_vectors/som/elisa.som.y2r1.v2/elisa.som.y2r1.v2.vec",
+        "fasttext_model_path": "./data/raw/fasttext_vectors/som/elisa.som.y2r1.v2/elisa.som.y2r1.v2.bin"
+    },
+    "run_id": "som_edit_vector_combined_distance_solver",
+    "save_dir": "./models/similarity/edit_vector_combined_distance_solver",
+    "log_dir": "./models/similarity/edit_vector_combined_distance_solver"
+}

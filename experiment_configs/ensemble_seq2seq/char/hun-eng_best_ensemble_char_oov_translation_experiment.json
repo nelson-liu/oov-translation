@@ -1,0 +1,13 @@
+{
+    "model_class": "Seq2SeqEnsembleTranslationModel",
+    "run_id": "seq2seq_char_hun_best_weighted_ensemble",
+    "model_params": {
+        "seq2seq_models": {
+            "hun_run0": "./models/seq2seq/char/seq2seq_char_hun_best_weighted_run0/seq2seq_char_hun_best_weighted_run0-step-1310000.ckpt",
+            "hun_run1": "./models/seq2seq/char/seq2seq_char_hun_best_weighted_run1/seq2seq_char_hun_best_weighted_run1-step-1440000.ckpt",
+            "hun_run2": "./models/seq2seq/char/seq2seq_char_hun_best_weighted_run2/seq2seq_char_hun_best_weighted_run2-step-1080000.ckpt"
+        }
+    },
+    "save_dir": "./models/seq2seq_ensemble/char",
+    "log_dir": "./logs/seq2seq_ensemble/char"
+}

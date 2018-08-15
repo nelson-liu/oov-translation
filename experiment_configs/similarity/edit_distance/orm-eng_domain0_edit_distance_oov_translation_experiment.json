@@ -1,0 +1,10 @@
+{
+    "model_class": "EditDistanceSolver",
+    "read_data_params": {
+        "tgt_given_src_path": "./data/processed/language_pairs_v3.2_gold_aligned/orm-eng_domain0/tgt_given_src.unnormalized",
+        "counts_path": "./data/processed/language_pairs_v3.2_gold_aligned/eng/gigaword_token_total_counts.txt"
+    },
+    "run_id": "orm_domain0_edit_distance_solver",
+    "save_dir": "./models/similarity/edit_distance_solver",
+    "log_dir": "./models/similarity/edit_distance_solver"
+}

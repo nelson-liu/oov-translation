@@ -1,0 +1,61 @@
+#### ESSENTIAL PACKAGES FOR MAIN FUNCTIONALITY ####
+# Progress logger
+tqdm==4.14.0
+
+# Levenshtein distance
+editdistance==0.3.1
+
+# Overrides decorator for readability
+overrides==1.8
+
+# Parse XML for reading XML monolingual corpora
+lxml==3.8.0
+
+# Efficient vector-based numerical operations
+numpy==1.13.0
+scipy==0.19.1
+
+# TensorFlow for Tensorboard, so we can visualize train progress
+tensorflow==1.2.0
+
+# Saving and loading models
+dill==0.2.7.1
+
+# Approximate vector nearest neighbor
+annoy==1.9.3
+
+# torchtext and its dependencies
+torchtext==0.1.1
+requests==2.18.1
+nltk==3.2.4
+spacy==1.8.2
+
+# Python 2 and 3 compatibility
+six==1.10.0
+
+# Machine learning library
+scikit-learn[alldeps]==0.18.2
+
+# Visualization
+matplotlib==2.0.2
+
+# Pluralize English nouns
+inflect==0.2.5
+
+#### OPTIONAL PACKAGES FOR MAIN FUNCTIONALITY ####
+# For outputting nicer tables in the scoring scripts
+tabulate==0.7.7
+
+#### TESTING-RELATED PACKAGES ####
+# Unit tests
+pytest==3.1.2
+
+# Lets pytest find our code
+pytest-pythonpath==0.7.1
+
+# Code style linting
+flake8==3.3.0
+
+# Coverage reports
+pytest-cov==2.5.1
+codecov==2.0.9

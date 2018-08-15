@@ -1,0 +1,27 @@
+{
+    "model_class": "CharSeq2SeqTranslationModel",
+    "read_data_params": {
+        "train_file": "./data/processed/language_pairs_v3.2_word_translation/spa-eng/spa-eng.weighted.word_translation.train",
+        "val_file": "./data/processed/language_pairs_v3.2_word_translation/spa-eng/spa-eng.word_translation.dev"
+    },
+    "run_id": "seq2seq_char_spa_best_weighted",
+    "model_params": {
+        "batch_size": 128,
+        "embed_dim": 1024,
+        "rnn_dim": 1024,
+        "output_projection_batch_size": 128,
+        "dropout": 0.3,
+        "num_layers": 3,
+        "lr": 0.0001,
+        "optimizer": "adam",
+        "rnn_type": "LSTM",
+        "seed": null
+    },
+    "train_model_params": {
+        "num_epochs": 10,
+        "val_period": 10000,
+        "early_stopping_patience": 3
+    },
+    "save_dir": "./models/seq2seq/char",
+    "log_dir": "./logs/seq2seq/char"
+}

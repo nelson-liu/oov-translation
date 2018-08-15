@@ -1,0 +1,11 @@
+{
+    "model_class": "EditVectorCombinedDistanceSolver",
+    "read_data_params": {
+        "tgt_given_src_path": "./data/processed/language_pairs_v3.2_gold_aligned/uzb-eng/tgt_given_src.unnormalized",
+        "fasttext_vectors_path": "./data/raw/fasttext_vectors/uzb/elisa.uzb.y1r1.v5/elisa.uzb.y1r1.v5.vec",
+        "fasttext_model_path": "./data/raw/fasttext_vectors/uzb/elisa.uzb.y1r1.v5/elisa.uzb.y1r1.v5.bin"
+    },
+    "run_id": "uzb_edit_vector_combined_distance_solver",
+    "save_dir": "./models/similarity/edit_vector_combined_distance_solver",
+    "log_dir": "./models/similarity/edit_vector_combined_distance_solver"
+}

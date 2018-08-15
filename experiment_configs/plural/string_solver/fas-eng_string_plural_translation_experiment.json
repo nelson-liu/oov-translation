@@ -1,0 +1,14 @@
+{
+    "model_class": "PluralStringSolver",
+    "read_data_params": {
+        "english_foreign_singular_plural_train": "./data/processed/language_pairs_v3.2_word_translation/subtasks/plural/fas-eng/fas-eng.singular-plural.train",
+        "english_foreign_singular_plural_val": "./data/processed/language_pairs_v3.2_word_translation/subtasks/plural/fas-eng/fas-eng.singular-plural.val",
+        "tgt_given_src_path": "./data/processed/language_pairs_v3.2_gold_aligned/fas-eng/tgt_given_src.unnormalized",
+        "en_wordlist_path": "./data/processed/glove/glove_english_vocab.txt"
+    },
+    "train_model_params": {
+        "plural_freq_thres": 5
+    },
+    "run_id": "fas_plural_stringsolver",
+    "save_dir": "./models/plural/string_solver/"
+}
